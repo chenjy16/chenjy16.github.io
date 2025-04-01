@@ -1,0 +1,121 @@
+{
+  "pageTitle": "chenjy的个人主页",
+  "nav": {
+    "about": "关于我",
+    "skills": "技能专长",
+    "projects": "项目展示",
+    "techStack": "技术栈",
+    "contact": "联系我"
+  },
+  "profile": {
+    "name": "chenjy",
+    "title": "软件架构师 | 云原生技术专家"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "热爱技术的软件架构师,擅长云原生技术、分布式系统设计和DevOps实践。",
+    "birthdate": "出生日期:",
+    "education": "学历:",
+    "educationValue": "本科"
+  },
+  "skills": {
+    "title": "技能专长",
+    "programming": {
+      "title": "编程语言",
+      "items": [
+        "熟悉Java技术体系",
+        "掌握Golang语言",
+        "掌握Gin, Gorm, Grpc-go等框架",
+        "熟悉RocketMQ, Sharding-sphere等中间件"
+      ]
+    },
+    "cloud": {
+      "title": "云原生技术",
+      "items": [
+        "熟悉云原生架构，Kubernetes实践经验",
+        "熟悉分布式系统架构设计",
+        "熟悉GitOps相关技术栈",
+        "系统可观测性(IaC, FinOps)实践经验"
+      ]
+    },
+    "mobile": {
+      "title": "个人独立开发",
+      "items": [
+        "iOS端独立开发经验",
+        "EdgeBox / PetVital等应用开发经验",
+        "跨平台应用开发"
+      ]
+    }
+  },
+  "projects": {
+    "title": "项目展示",
+    "moreInfo": "了解更多",
+    "features": "功能特点",
+    "technologies": "技术栈",
+    "support": "支持项目",
+    "supportDescription": "如果您觉得这个项目对您有帮助，可以通过以下方式支持我们：",
+    "starGithub": "GitHub",
+    "shareProject": "分享给朋友",
+    "donate": "捐赠支持",
+    "rideflow": {
+      "title": "RideFlow",
+      "description": "一款日常通勤、周末休闲骑行还是专业训练，RideFlow都是您的理想骑行伴侣",
+      "viewLink": "查看应用",
+      "donateLink": "支持项目",
+      "features": {
+        "0": "实时路况监测与预警",
+        "1": "智能路线规划与导航",
+        "2": "出行时间预测",
+        "3": "多种交通方式整合",
+        "4": "个性化出行建议"
+      }
+    },
+    "edgebox": {
+      "title": "EdgeBox",
+      "description": "边缘计算工具箱，提供设备AI LLM 下载 部署 运行功能。",
+      "viewLink": "查看应用",
+      "donateLink": "支持项目",
+      "features": {
+        "0": "本地AI模型部署与执行",
+        "1": "离线大语言模型(LLM)使用",
+        "2": "设备资源监控与优化",
+        "3": "边缘计算任务调度",
+        "4": "多设备协同计算"
+      }
+    },
+    "echodiary": {
+      "title": "EchoDiary",
+      "description": "智能语音日记应用，支持语音记录、情感分析和日记管理功能。",
+      "features": {
+        "0": "语音转文字日记记录",
+        "1": "AI情感分析与标签",
+        "2": "日记内容智能归类",
+        "3": "隐私保护与加密存储",
+        "4": "回顾与记忆提醒"
+      }
+    }
+  },
+  "techStack": {
+    "title": "技术栈",
+    "items": {
+      "0": "熟悉java技术体系,掌握golang语言，有良好的编码习惯",
+      "1": "掌握Gin、Gorm、Grpc-go、Motan-go等golang技术栈",
+      "2": "熟悉Dubbo、RocketMQ、Sharding-sphere等中间件源码",
+      "3": "熟悉云原生架构，对于基于Kubernates实现高可用、高性能和弹性伸缩云原生系统（部署资源定义/服务发现/配置中心/可观测性/扩容缩容等）有丰富落地实践经验",
+      "4": "熟悉分布式系统架构设计，对于数据库水平扩展、分布式事务和全球部署有丰富落地实践经验",
+      "5": "熟悉GitOps相关技术栈(Gitlab/ArgoCD等),具备从0到1构建CICD平台的落地实践经验",
+      "6": "对于系统可观测性、IaC(基础设施即代码)构建和FinOps(云资源分析和成本优化)构建有丰富的落地经验"
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "description": "如果您对我的工作感兴趣，或者有任何问题，欢迎随时联系我。",
+    "email": "邮箱",
+    "phone": "电话",
+    "github": "GitHub",
+    "zhihu": "知乎专栏"
+  },
+  "footer": {
+    "copyright": "© 2025 chenjy. 保留所有权利。"
+  }
+}
