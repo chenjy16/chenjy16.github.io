@@ -78,41 +78,6 @@ class I18n {
                     starGithub: 'GitHubSupport Project',
                     donate: 'Buy me a coffee'
                 },
-                experience: {
-                    title: 'Work Experience',
-                    jobs: {
-                        1: {
-                            period: '2022/11 - 2023/09',
-                            title: 'Technical Architecture Lead',
-                            company: 'Huabao New Energy',
-                            description: 'Responsible for the company\'s overall system infrastructure design, promoting the organization of the technical committee and managing daily operations. Led the construction of Huabao\'s digital cloud-native platform, promoting the development of portable energy storage products and mobile home energy storage new categories.'
-                        },
-                        2: {
-                            period: '2020/09 - 2022/08',
-                            title: 'Technical Manager',
-                            company: 'Castlery',
-                            description: 'Responsible for the company\'s entire supply chain system architecture design and global deployment plan, promoting the intelligence of the supply chain system. Formulate R&D processes, continuous integration and continuous deployment solution design.'
-                        },
-                        3: {
-                            period: '2018/11 - 2020/07',
-                            title: 'Senior Architect',
-                            company: 'Shenzhen Ping An Information Technology Co., Ltd.',
-                            description: 'Responsible for the overall architecture design, technology selection and development process formulation of the C-end project of Ping An Smart Pension Platform.'
-                        },
-                        4: {
-                            period: '2014/08 - 2018/06',
-                            title: 'Development Team Leader',
-                            company: 'Midea E-commerce',
-                            description: 'Responsible for the technical development and team management of the e-commerce platform.'
-                        },
-                        5: {
-                            period: '2011/06 - 2014/08',
-                            title: 'Senior Development Engineer',
-                            company: 'Suning Beijing R&D Center',
-                            description: 'Responsible for the development of core functional modules of the flash auction project and project progress management, and the development of Dal components and other infrastructure.'
-                        }
-                    }
-                },
                 footer: {
                     copyright: '© 2025 chenjy. All rights reserved.'
                 }
