@@ -62,11 +62,11 @@
       "viewLink": "View App",
       "donateLink": "Support Project",
       "features": {
-        "0": "Real-time traffic monitoring and alerts",
-        "1": "Intelligent route planning and navigation",
-        "2": "Travel time prediction",
-        "3": "Integration of multiple transportation modes",
-        "4": "Personalized travel recommendations"
+        "0": "Real-time Cycling Data Monitoring",
+        "1": "Smart Voice Announcements",
+        "2": "Ride Recording & Analysis",
+        "3": "Scheduled Announcements",
+        "4": "AI-powered Features"
       }
     },
     "edgebox": {
