@@ -92,6 +92,17 @@
         "3": "Privacy protection and encrypted storage",
         "4": "Reflection and memory reminders"
       }
+    },
+    "modelrank": {
+      "title": "ModelRank AI",
+      "description": "AI model evaluation and comparison tool that helps users select the most suitable large language model for specific tasks.",
+      "features": {
+        "0": "Multi-model performance comparison",
+        "1": "Task-specific evaluation metrics",
+        "2": "Custom test scenario creation",
+        "3": "Detailed performance report generation",
+        "4": "Model recommendation engine"
+      }
     }
   },
   "techStack": {
