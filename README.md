@@ -1,19 +1,17 @@
-# 个人主页
+# Personal Homepage
 
-这是我的个人主页项目，使用HTML、CSS和JavaScript构建。
+This is my personal homepage project, built using HTML, CSS, and JavaScript.
 
-## 功能特点
+## Features
+- Responsive design for all devices
+- Personal introduction
+- Skills and expertise showcase
+- Project portfolio
 
-- 响应式设计，适配各种设备
-- 个人简介展示
-- 技能和专长展示
-- 项目作品集
-- 工作经历时间线
-- 联系方式
 
-## 技术栈
 
+## Tech Stack
 - HTML5
-- CSS3 (动画、Flexbox、Grid)
+- CSS3 (Animations, Flexbox, Grid)
 - JavaScript (ES6+)
-- Font Awesome 图标
+- Font Awesome Icons
