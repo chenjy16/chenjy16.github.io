@@ -104,6 +104,50 @@
         "3": "详细的性能报告生成",
         "4": "模型推荐引擎"
       }
+    },
+    "pgparser": {
+      "title": "PGParser",
+      "description": "基于Go语言的PostgreSQL SQL解析器，支持将SQL语句解析为抽象语法树(AST)，提供语义分析、SQL生成、查询优化等功能。",
+      "features": {
+        "0": "SQL语句解析为AST",
+        "1": "语义分析和类型推断",
+        "2": "SQL语句生成",
+        "3": "查询优化和常量折叠",
+        "4": "错误处理和恢复机制"
+      }
+    },
+    "collections": {
+      "title": "Go Collections",
+      "description": "遵循Go语言惯例的集合操作库，为Go开发者提供丰富的集合操作功能，支持泛型和高性能实现。",
+      "features": {
+        "0": "丰富的集合类型(List、Set、Map等)",
+        "1": "Go 1.18+泛型支持",
+        "2": "高性能算法和内存管理",
+        "3": "线程安全的并发实现",
+        "4": "统一的迭代器模式"
+      }
+    },
+    "gogrpckit": {
+      "title": "Go gRPC Kit",
+      "description": "类似Spring Boot的gRPC框架，为Go提供开箱即用的gRPC服务开发体验，支持自动配置和服务发现。",
+      "features": {
+        "0": "自动配置和服务注册",
+        "1": "服务发现(etcd/consul)",
+        "2": "TLS/mTLS安全通信",
+        "3": "拦截器链和中间件",
+        "4": "健康检查和指标监控"
+      }
+    },
+    "gobatis": {
+      "title": "GoBatis",
+      "description": "类似MyBatis的Go ORM框架，提供SQL与业务逻辑解耦、自动参数绑定、结构体结果映射等功能。",
+      "features": {
+        "0": "SQL与业务逻辑解耦",
+        "1": "自动参数绑定",
+        "2": "结构体结果映射",
+        "3": "插件扩展系统",
+        "4": "动态代理和日志系统"
+      }
     }
   },
   "techStack": {

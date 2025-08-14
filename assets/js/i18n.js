@@ -248,6 +248,15 @@ class I18n {
     }
 }
 
+// 初始化函数
+function initializeI18n() {
+    console.log('初始化I18n');
+    window.i18n = new I18n();
+    window.i18n.init().catch(err => {
+        console.error('I18n初始化失败:', err);
+    });
+}
+
 // 初始化I18n实例
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM加载完成，初始化I18n');

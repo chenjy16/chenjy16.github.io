@@ -103,6 +103,50 @@
         "3": "Detailed performance report generation",
         "4": "Model recommendation engine"
       }
+    },
+    "pgparser": {
+      "title": "PGParser",
+      "description": "A PostgreSQL SQL parser written in Go that supports parsing SQL statements into Abstract Syntax Trees (AST), with semantic analysis, SQL generation, query optimization, and other features.",
+      "features": {
+        "0": "SQL parsing to AST",
+        "1": "Semantic analysis and type inference",
+        "2": "SQL statement generation",
+        "3": "Query optimization and constant folding",
+        "4": "Error handling and recovery mechanisms"
+      }
+    },
+    "collections": {
+      "title": "Go Collections",
+      "description": "This library follows Go language conventions and idioms, providing rich collection operation functionality for Go developers with generics support and high performance.",
+      "features": {
+        "0": "Rich collection types (List, Set, Map, etc.)",
+        "1": "Go 1.18+ generics support",
+        "2": "High performance algorithms and memory management",
+        "3": "Thread-safe concurrent implementations",
+        "4": "Unified iterator pattern"
+      }
+    },
+    "gogrpckit": {
+      "title": "Go gRPC Kit",
+      "description": "A Spring Boot-like gRPC framework for Go that provides out-of-the-box gRPC service development experience with auto-configuration and service discovery.",
+      "features": {
+        "0": "Auto configuration and service registration",
+        "1": "Service discovery (etcd/consul)",
+        "2": "TLS/mTLS secure communication",
+        "3": "Interceptor chain and middleware",
+        "4": "Health checks and metrics monitoring"
+      }
+    },
+    "gobatis": {
+      "title": "GoBatis",
+      "description": "A Go-based ORM framework similar to MyBatis, providing SQL and business logic decoupling, automatic parameter binding, and struct result mapping capabilities.",
+      "features": {
+        "0": "SQL-business logic decoupling",
+        "1": "Automatic parameter binding",
+        "2": "Struct result mapping",
+        "3": "Plugin extension system",
+        "4": "Dynamic proxy and logging system"
+      }
     }
   },
   "techStack": {
