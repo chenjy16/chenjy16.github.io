@@ -213,19 +213,19 @@ h1 {
 
 /* 现代化项目卡片样式 */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card-background);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--primary-color);
     transition: all 0.4s ease;
-    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
 }
 
 .project-image {
@@ -258,7 +258,7 @@ h1 {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .project-content h3 {
@@ -269,9 +269,9 @@ h1 {
 }
 
 .project-description {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-color);
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 0.95rem;
 }
 
@@ -283,31 +283,31 @@ h1 {
 }
 
 .tag {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.9);
+    background: rgba(52, 152, 219, 0.1);
+    color: var(--primary-color);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(52, 152, 219, 0.2);
     transition: all 0.3s ease;
 }
 
 .tag:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(52, 152, 219, 0.2);
     border-color: var(--primary-color);
 }
 
 .project-features {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .feature-item {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.8);
+    padding: 0.3rem 0;
+    color: var(--light-text);
     font-size: 0.9rem;
 }
 
@@ -344,14 +344,14 @@ h1 {
 }
 
 .btn-support {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #FF813F;
+    color: white;
+    border: 1px solid #FF813F;
 }
 
 .btn-support:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: var(--primary-color);
+    background: #ff6a1f;
+    border-color: #ff6a1f;
     transform: translateY(-2px);
 }
 
