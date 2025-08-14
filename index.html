@@ -29,63 +29,53 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 data-i18n="projects.title">项目展示</h2>
+            <p class="section-subtitle" data-i18n="projects.subtitle">探索我的技术作品集，从移动应用到开源工具</p>
             
-            <!-- RideFlow项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.rideflow.title">RideFlow</h3>
-                    <div class="project-links">
-                        <a href="https://apps.apple.com/us/app/rideflow/id6741391135?l=zh-Hans-CN" target="_blank" class="app-link">
-                            <i class="fab fa-app-store-ios"></i> 
-                            <span data-i18n="projects.rideflow.viewLink">查看应用</span>
-                        </a>
-                        
-                        <!-- 添加 GitHub 访问按钮 -->
-                        <a href="https://github.com/chenjy16/rideflow" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                 
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
-                                <i class="fas fa-coffee"></i>
-                                <span data-i18n="projects.donate">捐赠支持</span>
-                            </a>
+            <div class="projects-grid">
+                <!-- RideFlow项目 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-bicycle"></i>
                         </div>
+                        <div class="project-status">iOS App</div>
                     </div>
-                </div>
-                
-                <div class="project-content">
-                    <div class="project-info">
+                    <div class="project-content">
+                        <h3 data-i18n="projects.rideflow.title">RideFlow</h3>
                         <p class="project-description" data-i18n="projects.rideflow.description">一款智能出行应用，提供实时路况、智能导航和行程规划功能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="rideflow-features">
-                            <li data-i18n="projects.rideflow.features.0">实时路况监测与预警</li>
-                            <li data-i18n="projects.rideflow.features.1">智能路线规划与导航</li>
-                            <li data-i18n="projects.rideflow.features.2">出行时间预测</li>
-                            <li data-i18n="projects.rideflow.features.3">多种交通方式整合</li>
-                            <li data-i18n="projects.rideflow.features.4">个性化出行建议</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-            
-            <!-- EdgeBox项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.edgebox.title">EdgeBox</h3>
-                    <div class="project-links">
-                        <a href="https://apps.apple.com/us/app/edgebox/id6742104587?l=zh-Hans-CN" target="_blank" class="app-link">
-                            <i class="fab fa-app-store-ios"></i> 
-                            <span data-i18n="projects.edgebox.viewLink">查看应用</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">iOS</span>
+                            <span class="tag">Swift</span>
+                            <span class="tag">CoreLocation</span>
+                            <span class="tag">MapKit</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-route"></i>
+                                <span data-i18n="projects.rideflow.features.1">智能路线规划与导航</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-i18n="projects.rideflow.features.2">出行时间预测</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span data-i18n="projects.rideflow.features.4">个性化出行建议</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/rideflow/id6741391135?l=zh-Hans-CN" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-app-store-ios"></i>
+                                <span data-i18n="projects.rideflow.viewLink">查看应用</span>
+                            </a>
+                            <a href="https://github.com/chenjy16/rideflow" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">支持项目</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
                                 <span data-i18n="projects.donate">捐赠支持</span>
                             </a>
@@ -93,36 +83,46 @@
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- EdgeBox项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="project-status">iOS App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.edgebox.title">EdgeBox</h3>
                         <p class="project-description" data-i18n="projects.edgebox.description">边缘计算工具箱，提供设备AI LLM 下载 部署 运行功能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="edgebox-features">
-                            <li data-i18n="projects.edgebox.features.0">本地AI模型部署与执行</li>
-                            <li data-i18n="projects.edgebox.features.1">离线大语言模型(LLM)使用</li>
-                            <li data-i18n="projects.edgebox.features.2">设备资源监控与优化</li>
-                            <li data-i18n="projects.edgebox.features.3">边缘计算任务调度</li>
-                            <li data-i18n="projects.edgebox.features.4">多设备协同计算</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-
-            <!-- EchoDiary项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.echodiary.title">EchoDiary</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/EchoDiary" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">iOS</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Edge Computing</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-download"></i>
+                                <span data-i18n="projects.edgebox.features.0">本地AI模型部署与执行</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bolt"></i>
+                                <span data-i18n="projects.edgebox.features.1">离线大语言模型(LLM)使用</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-wifi-slash"></i>
+                                <span data-i18n="projects.edgebox.features.4">多设备协同计算</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/edgebox/id6742104587?l=zh-Hans-CN" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-app-store-ios"></i>
+                                <span data-i18n="projects.edgebox.viewLink">查看应用</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
                                 <span data-i18n="projects.donate">捐赠支持</span>
                             </a>
@@ -130,202 +130,284 @@
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- EchoDiary项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.echodiary.title">EchoDiary</h3>
                         <p class="project-description" data-i18n="projects.echodiary.description">智能语音日记应用，支持语音记录、情感分析和日记管理功能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="echodiary-features">
-                            <li data-i18n="projects.echodiary.features.0">语音转文字日记记录</li>
-                            <li data-i18n="projects.echodiary.features.1">AI情感分析与标签</li>
-                            <li data-i18n="projects.echodiary.features.2">日记内容智能归类</li>
-                            <li data-i18n="projects.echodiary.features.3">隐私保护与加密存储</li>
-                            <li data-i18n="projects.echodiary.features.4">回顾与记忆提醒</li>
-                        </ul>
-                    </div>
-                </div>
-            
-            <hr class="project-divider">
-            
-            <!-- ModelRank AI项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.modelrank.title">ModelRank AI</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/modelrank_ai" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Speech Recognition</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-voice"></i>
+                                <span data-i18n="projects.echodiary.features.0">语音转文字日记记录</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <span data-i18n="projects.echodiary.features.1">AI情感分析与标签</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span data-i18n="projects.echodiary.features.3">隐私保护与加密存储</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/EchoDiary" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">支持项目</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
                                 <span data-i18n="projects.donate">捐赠支持</span>
                             </a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="project-content">
-                    <div class="project-info">
+                    
+                <!-- ModelRank AI项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.modelrank.title">ModelRank AI</h3>
                         <p class="project-description" data-i18n="projects.modelrank.description">AI模型评估与比较工具，帮助用户选择最适合特定任务的大语言模型。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="modelrank-features">
-                            <li data-i18n="projects.modelrank.features.0">多模型性能对比分析</li>
-                            <li data-i18n="projects.modelrank.features.1">任务特定评估指标</li>
-                            <li data-i18n="projects.modelrank.features.2">自定义测试场景创建</li>
-                            <li data-i18n="projects.modelrank.features.3">详细的性能报告生成</li>
-                            <li data-i18n="projects.modelrank.features.4">模型推荐引擎</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-            
-            <!-- PGParser项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.pgparser.title">PGParser</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/pgparser" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Benchmarking</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span data-i18n="projects.modelrank.features.0">多模型性能对比分析</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tasks"></i>
+                                <span data-i18n="projects.modelrank.features.1">任务特定评估指标</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-i18n="projects.modelrank.features.3">详细的性能报告生成</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/modelrank_ai" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">查看代码</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
-                                <span data-i18n="projects.donate">捐赠支持</span>
+                                <span data-i18n="projects.donate">支持项目</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- PGParser项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.pgparser.title">PGParser</h3>
                         <p class="project-description" data-i18n="projects.pgparser.description">基于Go语言编写的PostgreSQL SQL解析器，支持将SQL语句解析为抽象语法树(AST)，具备语义分析、SQL生成、查询优化等功能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="pgparser-features">
-                            <li data-i18n="projects.pgparser.features.0">SQL解析为AST</li>
-                            <li data-i18n="projects.pgparser.features.1">语义分析和类型推断</li>
-                            <li data-i18n="projects.pgparser.features.2">SQL语句生成</li>
-                            <li data-i18n="projects.pgparser.features.3">查询优化和常量折叠</li>
-                            <li data-i18n="projects.pgparser.features.4">错误处理和恢复机制</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-            
-            <!-- Collections项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.collections.title">Go Collections</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/collections" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Parser</span>
+                            <span class="tag">AST</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span data-i18n="projects.pgparser.features.0">SQL解析为AST</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span data-i18n="projects.pgparser.features.1">语义分析和类型推断</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <span data-i18n="projects.pgparser.features.3">查询优化和常量折叠</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/pgparser" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">查看代码</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
-                                <span data-i18n="projects.donate">捐赠支持</span>
+                                <span data-i18n="projects.donate">支持项目</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- Go Collections项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.collections.title">Go Collections</h3>
                         <p class="project-description" data-i18n="projects.collections.description">该库遵循Go语言的约定和习惯用法，为Go开发者提供丰富的集合操作功能，支持泛型和高性能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="collections-features">
-                            <li data-i18n="projects.collections.features.0">丰富的集合类型(List、Set、Map等)</li>
-                            <li data-i18n="projects.collections.features.1">Go 1.18+泛型支持</li>
-                            <li data-i18n="projects.collections.features.2">高性能算法和内存管理</li>
-                            <li data-i18n="projects.collections.features.3">线程安全的并发实现</li>
-                            <li data-i18n="projects.collections.features.4">统一的迭代器模式</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-            
-            <!-- Go gRPC Kit项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.gogrpckit.title">Go gRPC Kit</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/go-grpc-kit" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">Generics</span>
+                            <span class="tag">Collections</span>
+                            <span class="tag">Data Structures</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-boxes"></i>
+                                <span data-i18n="projects.collections.features.0">丰富的集合类型(List、Set、Map等)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-code"></i>
+                                <span data-i18n="projects.collections.features.1">Go 1.18+泛型支持</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-sync"></i>
+                                <span data-i18n="projects.collections.features.3">线程安全的并发实现</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/collections" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">查看代码</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
-                                <span data-i18n="projects.donate">捐赠支持</span>
+                                <span data-i18n="projects.donate">支持项目</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- Go gRPC Kit项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.gogrpckit.title">Go gRPC Kit</h3>
                         <p class="project-description" data-i18n="projects.gogrpckit.description">类似Spring Boot的Go gRPC框架，提供开箱即用的gRPC服务开发体验，支持自动配置和服务发现。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="gogrpckit-features">
-                            <li data-i18n="projects.gogrpckit.features.0">自动配置和服务注册</li>
-                            <li data-i18n="projects.gogrpckit.features.1">服务发现(etcd/consul)</li>
-                            <li data-i18n="projects.gogrpckit.features.2">TLS/mTLS安全通信</li>
-                            <li data-i18n="projects.gogrpckit.features.3">拦截器链和中间件</li>
-                            <li data-i18n="projects.gogrpckit.features.4">健康检查和指标监控</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="project-divider">
-            
-            <!-- GoBatis项目 -->
-            <div class="project-detail">
-                <div class="project-header">
-                    <h3 data-i18n="projects.gobatis.title">GoBatis</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/chenjy16/gobatis" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> 
-                            <span data-i18n="projects.starGithub">支持项目</span>
-                        </a>
-                        <!-- 添加 Buy Me a Coffee 按钮 -->
-                        <div class="bmc-btn-container">
-                            <a class="bmc-btn" data-name="bmc-button" data-slug="chenjianyu" data-color="#5F7FFF" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" href="https://www.buymeacoffee.com/chenjianyu" target="_blank">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">gRPC</span>
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Framework</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-cogs"></i>
+                                <span data-i18n="projects.gogrpckit.features.0">自动配置和服务注册</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-search"></i>
+                                <span data-i18n="projects.gogrpckit.features.1">服务发现(etcd/consul)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span data-i18n="projects.gogrpckit.features.2">TLS/mTLS安全通信</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/go-grpc-kit" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">查看代码</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
                                 <i class="fas fa-coffee"></i>
-                                <span data-i18n="projects.donate">捐赠支持</span>
+                                <span data-i18n="projects.donate">支持项目</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-content">
-                    <div class="project-info">
+                <!-- GoBatis项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="project-status">Open Source</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.gobatis.title">GoBatis</h3>
                         <p class="project-description" data-i18n="projects.gobatis.description">基于Go的类似MyBatis的ORM框架，提供SQL与业务逻辑解耦、自动参数绑定和结构体结果映射功能。</p>
                         
-                        <h4 data-i18n="projects.features">功能特点</h4>
-                        <ul class="feature-list" id="gobatis-features">
-                            <li data-i18n="projects.gobatis.features.0">SQL与业务逻辑解耦</li>
-                            <li data-i18n="projects.gobatis.features.1">自动参数绑定</li>
-                            <li data-i18n="projects.gobatis.features.2">结构体结果映射</li>
-                            <li data-i18n="projects.gobatis.features.3">插件扩展系统</li>
-                            <li data-i18n="projects.gobatis.features.4">动态代理和日志系统</li>
-                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">ORM</span>
+                            <span class="tag">Database</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-unlink"></i>
+                                <span data-i18n="projects.gobatis.features.0">SQL与业务逻辑解耦</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-link"></i>
+                                <span data-i18n="projects.gobatis.features.1">自动参数绑定</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-sitemap"></i>
+                                <span data-i18n="projects.gobatis.features.2">结构体结果映射</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/chenjy16/gobatis" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span data-i18n="projects.starGithub">查看代码</span>
+                            </a>
+                            <a href="https://www.buymeacoffee.com/chenjianyu" target="_blank" class="btn btn-support">
+                                <i class="fas fa-coffee"></i>
+                                <span data-i18n="projects.donate">支持项目</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

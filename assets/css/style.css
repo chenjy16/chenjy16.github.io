@@ -46,7 +46,6 @@ h1, h2, h3, h4 {
 
 section {
     padding: 60px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 
 /* 头部样式 */
@@ -205,27 +204,155 @@ h1 {
 }
 
 /* 项目展示部分 */
-.project-grid {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-/* 项目卡片样式增强 */
+/* 现代化项目卡片样式 */
 .project-card {
-    background-color: var(--card-background);
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(15px);
+    position: relative;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.project-image {
+    position: relative;
+    height: 120px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-icon {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.9;
+}
+
+.project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+.project-description {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--primary-color);
+}
+
+.project-features {
+    margin-bottom: 1.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 1rem;
+    width: 16px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-support {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-support:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 .project-links a, .project-links button {
@@ -271,11 +398,12 @@ h1 {
 /* 项目详情样式 */
 .project-detail {
     background-color: var(--card-background);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
 }
 
 .project-detail:hover {
@@ -287,18 +415,23 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project-header h3 {
-    margin-bottom: 0;
-    font-size: 1.5rem;
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .project-links {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-content {
@@ -313,17 +446,28 @@ h1 {
 }
 
 .project-description {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: var(--text-color);
 }
 
 .feature-list {
     padding-left: 20px;
+    margin-top: 15px;
 }
 
 .feature-list li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: var(--light-text);
+}
+
+.project-info h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .project-screenshots {
@@ -350,19 +494,21 @@ h1 {
 .project-divider {
     border: none;
     height: 1px;
-    background-color: var(--border-color);
-    margin: 40px 0;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    margin: 60px 0;
+    opacity: 0.6;
 }
 
 .app-link, .github-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 10px 16px;
+    border-radius: 6px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .app-link {
@@ -372,6 +518,8 @@ h1 {
 
 .app-link:hover {
     background-color: var(--hover-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .github-link {
@@ -381,6 +529,8 @@ h1 {
 
 .github-link:hover {
     background-color: #555;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* 模态框样式 */
@@ -683,13 +833,14 @@ h1 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 10px 16px;
+    border-radius: 6px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
     text-decoration: none;
     background-color: #FF813F;
     color: white;
+    font-weight: 500;
 }
 
 .bmc-btn:hover {
@@ -752,18 +903,73 @@ h1 {
     }
     
     /* 项目响应式 */
-    .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        margin: 0 10px;
+    }
+    
+    .project-image {
+        height: 100px;
+    }
+    
+    .project-icon {
+        font-size: 2.5rem;
     }
     
     .project-content {
+        padding: 1.2rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    .project-links {
         flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+    }
+    
+    .project-tags {
+        gap: 0.3rem;
+    }
+    
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+    }
+    
+    /* 保持旧样式兼容性 */
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
     
     .project-screenshots {
         order: -1;
+    }
+    
+    .project-detail {
+        padding: 20px;
+        margin-bottom: 0;
     }
     
     /* 技能响应式 */
