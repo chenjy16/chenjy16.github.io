@@ -137,6 +137,17 @@
         "4": "Health checks and metrics monitoring"
       }
     },
+    "gospringai": {
+      "title": "Go Spring AI",
+      "description": "A Spring AI-like Go framework for interacting with large language models, providing a unified interface for various AI providers and models.",
+      "features": {
+        "0": "Unified AI model interface",
+        "1": "Multi-AI provider support",
+        "2": "Prompt templates and chain calls",
+        "3": "Model-specific configurations",
+        "4": "Streaming and batch processing"
+      }
+    },
     "gobatis": {
       "title": "GoBatis",
       "description": "A Go-based ORM framework similar to MyBatis, providing SQL and business logic decoupling, automatic parameter binding, and struct result mapping capabilities.",

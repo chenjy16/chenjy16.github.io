@@ -138,6 +138,17 @@
         "4": "健康检查和指标监控"
       }
     },
+    "gospringai": {
+      "title": "Go Spring AI",
+      "description": "类似Spring AI的Go语言AI框架，提供与大语言模型交互的统一接口，支持多种AI提供商和模型。",
+      "features": {
+        "0": "统一的AI模型接口",
+        "1": "多AI提供商支持",
+        "2": "Prompt模板和链式调用",
+        "3": "模型特定配置",
+        "4": "流式和批量处理"
+      }
+    },
     "gobatis": {
       "title": "GoBatis",
       "description": "类似MyBatis的Go ORM框架，提供SQL与业务逻辑解耦、自动参数绑定、结构体结果映射等功能。",
